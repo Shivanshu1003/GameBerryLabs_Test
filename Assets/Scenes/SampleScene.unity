@@ -5118,7 +5118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Feedbacks: []
-  InitializationMode: 2
+  InitializationMode: 0
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
@@ -5213,8 +5213,8 @@ MonoBehaviour:
           CooldownDuration: 0
           InterruptsOnStop: 1
           NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
+          RepeatForever: 1
+          DelayBetweenRepeats: 2
           MMFeedbacksDirectionCondition: 0
           PlayDirection: 0
           ConstantIntensity: 0
@@ -13606,7 +13606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Feedbacks: []
-  InitializationMode: 2
+  InitializationMode: 0
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
@@ -13701,8 +13701,8 @@ MonoBehaviour:
           CooldownDuration: 0
           InterruptsOnStop: 1
           NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
+          RepeatForever: 1
+          DelayBetweenRepeats: 2
           MMFeedbacksDirectionCondition: 0
           PlayDirection: 0
           ConstantIntensity: 0
@@ -19580,12 +19580,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Feedbacks: []
-  InitializationMode: 2
+  InitializationMode: 0
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
   AutoPlayOnStart: 0
-  AutoPlayOnEnable: 1
+  AutoPlayOnEnable: 0
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
@@ -19675,8 +19675,8 @@ MonoBehaviour:
           CooldownDuration: 0
           InterruptsOnStop: 1
           NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
+          RepeatForever: 1
+          DelayBetweenRepeats: 2
           MMFeedbacksDirectionCondition: 0
           PlayDirection: 0
           ConstantIntensity: 0
