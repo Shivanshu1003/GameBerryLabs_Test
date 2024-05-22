@@ -248,8 +248,10 @@ Shader "Unlit/Texture_Blur_Shader"
     }
     SubShader
     {
-    Tags { "RenderType"="Opaque" }
-
+    Tags { "Queue"="Transparent" }
+    Cull Off 
+    ZWrite Off 
+    //ZTest Always
     Pass
     {
         CGPROGRAM
