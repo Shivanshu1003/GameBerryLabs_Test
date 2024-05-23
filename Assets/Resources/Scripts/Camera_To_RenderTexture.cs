@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Camera))]
+[RequireComponent(typeof(Camera)),ExecuteInEditMode,ImageEffectAllowedInSceneView]
 public class Camera_To_RenderTexture : MonoBehaviour
 {
     private RenderTexture RT;

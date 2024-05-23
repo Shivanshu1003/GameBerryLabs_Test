@@ -28,7 +28,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Amount: 0
-    - _BlurAmount: 0
+    - _BlurAmount: 0.005
     - _BlurType: 0
     - _Iterations: 0
     - _Radius: 0
