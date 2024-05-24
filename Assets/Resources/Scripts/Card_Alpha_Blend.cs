@@ -64,5 +64,6 @@ public class Card_Alpha_Blend : MonoBehaviour
     private void OnDisable()
     {
         m_material.SetFloat("_Blend", 1.0f);
+        ResetBlur();
     }
 }
