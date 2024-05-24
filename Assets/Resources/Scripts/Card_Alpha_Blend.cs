@@ -7,10 +7,18 @@ public class Card_Alpha_Blend : MonoBehaviour
 {
     public Material m_material;
     public float m_speed = 0.1f;
+    public float m_blurAmount = 0.005f;
     private float value;
 
     private Coroutine currentCoroutine;
-
+    public void SetBlur()
+    {
+        m_material.SetFloat("_Blend", m_blurAmount);
+    }
+    public void ResetBlur()
+    {
+        m_material.SetFloat("_Blend",0.0f);
+    }
     public void IncreaseValue()
     {
         if (currentCoroutine != null)

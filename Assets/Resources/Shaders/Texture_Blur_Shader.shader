@@ -5,7 +5,7 @@ Shader "Unlit/Texture_Blur_Shader"
     CBUFFER_START(UnityPerMaterial)
         sampler2D _MainTex;
         float4 _MainTex_ST,_MainTex_TexelSize,_Center;
-        half _BlurAmount,_Sigma,_Radius,_SpaceSigma,_RangeSigma,_Width,_Radius2,_Iterations,_Amount;
+        half _Blend,_Sigma,_Radius,_SpaceSigma,_RangeSigma,_Width,_Radius2,_Iterations,_Amount;
     CBUFFER_END      
     struct v2f
     {
@@ -26,9 +26,8 @@ Shader "Unlit/Texture_Blur_Shader"
     Properties
     {
         _MainTex ("Texture", 2D) = "grey" {}
-
         [Header(Box Blur)][Space(5)]
-        _BlurAmount("Amount",float) = 0        
+        _Blend("Amount",float) = 0        
     }
     SubShader
     {
@@ -50,7 +49,7 @@ Shader "Unlit/Texture_Blur_Shader"
                 UNITY_UNROLL
                 for(int n = -4; n <= 4 ; n++)
                 {
-                    float2 o = float2(m,n) * _MainTex_TexelSize.xy * max(0.0f,_BlurAmount);
+                    float2 o = float2(m,n) * _MainTex_TexelSize.xy * max(0.0f,_Blend);
                     col += tex2D(_MainTex,i.uv + o).xyz;
                 }
             }
